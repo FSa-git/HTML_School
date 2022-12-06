@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-gap: 10 px;
+            grid-template-areas: 
+            "navi kopf kopf kopf"
+            "navi teaser1 teaser2 teaser3"
+            "navi haupt haupt haupt"
+            "fuss fuss fuss fuss";
+        }
+        nav, header, .teaser1, .teaser2, .teaser3, main, footer{
+            background-color: #444;
+            color:#fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+        nav{
+            grid-area: navi;
+        }
+        header{
+            grid-area: kopf;
+        }
+        .teaser1{
+            grid-area: teaser1;
+        }
+        .teaser2{
+            grid-area: teaser2;
+        }
+        .teaser3{
+            grid-area: teaser3;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+        @media(min-width: 796px){
+            .wrapper{
+                grid-template-areas: 
+                'navi kopf kopf kopf'
+                'navi teaser1 teaser2 teaser3'
+                'navi haupt haupt haupt'
+                'fuss fuss fuss fuss';
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <nav>Navigation</nav>
+        <header>Headerbereich</header>
+        <div class="teaser1">Teaser1</div>
+        <div class="teaser2">Teaser2</div>
+        <div class="teaser3">Teaser3</div>
+        <div class="fuss">fuss</div>
+    </div>
+</body>
+</html>

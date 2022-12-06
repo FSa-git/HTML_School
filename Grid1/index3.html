@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Grid Learning</title>
+<style>
+body {
+margin: 40px;
+}
+.wrapper {
+display: grid;
+grid-gap: 10px;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+color: #444;
+}
+.box {
+background-color: #444;
+color: #fff;
+border-radius: 5px;
+padding: 20px;
+font-size: 150%;
+}
+        nav{
+            grid-area: navi;
+            padding: 15px;
+        }
+        header{
+            grid-area: kopf;
+        }
+        .teaser1{
+            grid-area: teaser1;
+        }
+        .teaser2{
+            grid-area: teaser2;
+        }
+        .teaser3{
+            grid-area: teaser3;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+        @media(min-width: 796px){
+            .wrapper{
+                grid-template-areas: 
+                'navi kopf kopf kopf'
+                'navi teaser1 teaser2 teaser3'
+                'navi haupt haupt haupt'
+                'fuss fuss fuss fuss';
+            }
+        }
+.navi{
+    padding: 150%;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="box a">navi</div>
+<div class="box b">Headerbereich</div>
+<div class="box c">C</div>
+<div class="box d">D</div>
+<div class="box e">E</div>
+<div class="box f">F</div>
+<div class="box g">G</div>
+<div class="box h">H</div>
+<div class="box i">I</div>
+</div>
+</body>
+</html>
