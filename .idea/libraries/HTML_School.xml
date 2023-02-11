@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="HTML_School">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WPR_Heute.zip!/" />
+      <root url="jar://$PROJECT_DIR$/02_Uebungen_Flexbox_Vorlagen.zip!/" />
+      <root url="jar://$PROJECT_DIR$/03_flexbox_komplexer_loesung (2).zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
