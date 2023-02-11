@@ -1,0 +1,25 @@
+div#wrapper {
+    display: grid;
+    grid‐template‐columns: 10px 1fr 10px;
+    grid‐template‐areas: " . form . "
+}
+@media only screen and (min‐width: 960px) {
+    div#wrapper {
+        grid‐template‐columns: 1fr 500px 1fr;
+    }
+}
+body{
+    background-image: url(/16_Formulare/Aufgabe_Formulare/images/office.jpg);
+    font-family: sans-serif;
+    margin: 50px;
+    color: white;
+}
+h1{
+    color: white;
+}
+fieldset{
+    background-color: rgba(231, 195, 124, 0.445);
+}
+button{
+    
+}
