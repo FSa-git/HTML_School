@@ -20,6 +20,34 @@ h1{
 fieldset{
     background-color: rgba(231, 195, 124, 0.445);
 }
-button{
-    
-}
+input[type="text"] {
+    font-family: sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+  }
+  
+  label {
+    display: block;
+    width: 100%;
+  }
+  input:focus, input:active {
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: white;
+  }
+  
+  button{
+    padding: 15px 40px;
+  }
+
+  fieldset{
+    width: 100%;
+  }
+  form{
+    width: 100%;
+  }
