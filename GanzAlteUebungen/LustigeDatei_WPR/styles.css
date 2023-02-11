@@ -1,0 +1,31 @@
+h1{
+    font-family: Helvetica;
+    color: blueviolet;
+}
+
+body{
+    background-color: gray;
+}
+
+table{
+    border-collapse: collapse;
+    width: 50%;
+    text-align: left;
+    /* text-size-adjust: 50px; */
+}
+
+tr:nth-child(5n+1){
+    background-color: aliceblue;
+}
+tr:nth-child(5n+2){
+    background-color: antiquewhite;
+}
+tr:nth-child(5n+3){
+    background-color: aqua;
+}
+tr:nth-child(5n+4){
+    background-color: blueviolet;
+}
+tr:nth-child(5n+5){
+    background-color: white;
+}

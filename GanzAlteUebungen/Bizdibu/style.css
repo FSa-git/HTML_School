@@ -1,0 +1,42 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+/* Grafiken */
+img{
+    width: 100%;
+    height: 500px;
+}
+
+/*
+Hier wird die Hintergrundfarbe definiert
+*/
+
+body{
+    background-color: blanchedalmond;
+}
+
+
+/*Tabellengestalltung*/
+
+table{
+    border-collapse: collapse;
+    width: 50%;
+    /*border-color: tomato;*/
+}
+
+tr:nth-child(5n+1){
+    background-color: blue;
+}
+tr:nth-child(5n+2){
+    background-color: red;
+}
+tr:nth-child(5n+3){
+    background-color: chartreuse;
+}
+tr:nth-child(5n+4){
+    background-color: darkcyan;
+}
+tr:nth-child(5n+5){
+    background-color: tomato;
+}
