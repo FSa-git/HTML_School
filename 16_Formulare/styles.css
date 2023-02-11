@@ -1,0 +1,33 @@
+/* Formular CSS */
+form, input, button {
+    font-size:1em;
+    margin-left: 20px;
+    font-family: Calibri, Arial, sans-serif;
+}
+fieldset.buttons {
+    border:none;
+}
+input {
+    margin-left: 0px;
+    width: 200px;
+}
+input:required + label::after {
+  content:" * bitte ausfüllen";
+  color: #f00;
+}
+input:required:valid + label::after {
+  content:none;
+}
+button {
+    background:#79aad8;
+    border-radius:5px;
+    font-size:1em;
+    border-style:none;
+    padding:8px;
+}
+button:hover, button:focus {
+    text-decoration:underline;
+}
+button[type="submit"] {
+    color:rgba(0,53,84,1);
+}

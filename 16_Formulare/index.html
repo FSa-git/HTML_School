@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulare</title>
+</head>
+<body>
+    <h1>Formulare</h1>
+    <form action="">
+        <fieldset>
+            <legend>Ihre Kontaktdaten</legend>
+    <p>
+    <input type="text" id="nachname" placeholder="Nachname" required="required">
+                <label for="nachname" >Nachname</label>
+            </p>
+    <p>
+    <input type="text" id="vorname" placeholder="Vorname" required="required">
+                <label for="vorname" >Vorname</label>
+            </p>
+    <p>
+    <input type="email" id="email" required="required">
+                <label for="email">E-Mail</label>
+            </p>
+            <p>
+                <input type="tel" id="tel">
+    <label for="tel">Telefonnummer</label> </p>
+        </fieldset>
+        <fieldset>
+    <legend>Was Sie uns mitzuteilen haben:</legend>
+    <p>
+    <textarea name="" id="kommentar" cols="30" rows="10"></textarea>
+    <label for="kommentar">Ihre Nachricht</label> </p>
+        </fieldset>
+    <fieldset>
+        <button type="reset">Zurücksetzen</button>
+        <button type="submit">Absenden</button>
+    </fieldset>
+    </form>
+</body>
+</html>
