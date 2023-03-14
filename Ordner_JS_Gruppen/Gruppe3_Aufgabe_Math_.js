@@ -36,6 +36,12 @@
 
 let amountStr = "15,37"
 
+let amount = parseFloat(amountStr.replace(",",".")) * 100
+console.log(amount)
+console.log("-" + Math.floor(amount/200) + "x 2$")
+console.log()
+
+
 
 /////////////////////////////////////////////////////////////////////////////
 
