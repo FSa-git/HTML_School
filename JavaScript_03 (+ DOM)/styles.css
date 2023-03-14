@@ -1,0 +1,11 @@
+body{
+    text-align: center; /*Tut den Inhalt in die Mitte*/
+}
+#zaehler{
+    font-family: fantasy;
+    font-size: 2rem;
+}
+input{
+    padding: 9px;
+    margin-top: 32px;
+}

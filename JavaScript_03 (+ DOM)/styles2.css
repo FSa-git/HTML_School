@@ -1,0 +1,13 @@
+body{
+    text-align: center; /*Tut den Inhalt in die Mitte*/
+    font-size: 3rem;
+}
+#berechnen{
+    font-family: fantasy;
+    font-size: 3rem;
+}
+input{
+    padding: 19px;
+    margin-top: 32px;
+    font-size: 3rem;
+}

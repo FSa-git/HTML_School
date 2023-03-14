@@ -1,0 +1,13 @@
+body{
+    padding-top: 100px;
+    text-align: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+input{
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 3rem;
+}
