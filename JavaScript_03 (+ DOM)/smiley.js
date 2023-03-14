@@ -11,6 +11,8 @@ happy.addEventListener('click', () => {
     happy.disabled = true;
     sad.disabled = false;
 
+    
+
 });
       // gleiches für traurig
 sad.addEventListener('click', () => {
