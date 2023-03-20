@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="gobutton" value="Go">
+    <img id="z1" src="0.png">
+    <img id="z2" src="0.png">
+    <img id="z3" src="0.png">
+    
+    <img id="rf" src="kreuz.png">
+    <br>
+    Paschstatistik: <span id="p">0</span> von <span id="v">0</span>
+<script>
+let pasch = 0;
+let versuche = 0;
+// Button holen
+let goButton = document.getElementById("gobutton")
+// Funktion auf Button ausführen
+gobutton.addEventListener("click",go)
+//Funktion definieren
+function go() {
+versuche = versuche + 1;
+
+zz1 = Math.floor((Math.random()*10)+0)
+zz2 = Math.floor((Math.random()*10)+0)
+zz3 = Math.floor((Math.random()*10)+0)
+ // Zufallszahl zwischen 0 und 9 wird erzeugt
+//1. Relevantes JS-Objekt ermitteln
+imgObj1=document.getElementById('z1')
+imgObj1.setAttribute("src", zz1 + ".png")
+
+imgObj2=document.getElementById('z2')
+//2. ...und src-Attribut neu setzen
+imgObj2.setAttribute("src", zz2 + ".png")
+
+imgObj3=document.getElementById('z3')
+imgObj3.setAttribute("src", zz3 + ".png")
+
+// gobutton.addEventListener("click", go)
+if(zz1 == zz2 && zz2 == zz3){
+    bildname = 'haken';
+    pasch = pasch + 1;
+}else{
+    bildname = 'kreuz';
+}
+imgObjE = document.getElementById("rf")
+imgObjE.setAttribute("src", bildname + ".png" )
+
+// hier werden die Werte abgeholt sonst werden diese Überschrieben
+//Anzahl Versuche und Erfolge (Pasch) ausgeben
+document.getElementById('p').innerText = pasch;
+document.getElementById('v').innerText = versuche;
+}
+</script>
+</body>
+</html>
