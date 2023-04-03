@@ -1,0 +1,47 @@
+body {
+    font-family: 'Source Sans Pro', Calibri, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+code {
+    font-family: 'DM Mono', monospace;
+}
+body {
+    display: grid;
+    grid-template-columns:10px 1fr 10px;
+    grid-template-areas: 
+    "header header header"
+    ". main ." 
+    "footer footer footer";
+   
+}
+main {
+    grid-area: main;
+}
+header, footer {
+    
+    background-color:rgb(97, 9, 9);
+    color: #fff;
+    padding: 10px;
+}
+header {
+    grid-area: header;
+}
+footer {
+    grid-area: footer;
+}
+.ueberschriften {
+    cursor: pointer;
+}
+.invisible {
+    display: none;
+}
+@media (min-width:700px) {
+    body {
+    grid-template-columns: 20% 1fr 20%;
+    }
+}

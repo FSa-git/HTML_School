@@ -47,7 +47,7 @@
     <select size="1" id="schriftart" style="margin-right: 24px">
       
       <option value="Arial">Arial</option>
-     <!-- Mehr Optionen einfügen-->  
+      <option value="Gill Sans">Gill Sans</option>
         
     </select>
 
@@ -80,22 +80,36 @@
       // 1. Schriftart ändern: holen auf change mit .style.fontFamily = ... .value 
 
       let objSelect = document.getElementById('schriftart');
-      objSelect.addEventListener('change', () => {
+      
+      objSelect.addEventListener('change', schrift); 
+      
+      function schrift(){
         
-      });
+        fF = objSelect.value;
+        document.getElementById('text').style.fontFamily = fF; 
+      }
 
       //2. Schriftgröße ändern auf change mit style.fontSize = ... .value
       
-      // function(groesse){
-        
+      // let slider = document.getElementById('size');
+      // let text = document.getElementById('text');
+
+      // slider.oninput = function(){
+      //   let changer = slider.value;
+      //   text.style.fontSize = size + "px";
       // }
+
+      let objInputSize = document.getElementById('size');
+      objInputSize.addEventListener('change', () =>{
+        objDiv.style.fontSize
+      })
 
 
       // 3. Farben holen und ändern - diese Lösung verwendet querySelectorAll und switch und case
 
       /*Alle Buttons mit querySelectorAll auswählen und mit console.log ausgeben lassen */
-      let farben = document.querySelectorAll('input.farbe');
-      console.log(farben);
+      let farben = document.querySelectorAll('input.farbe'); //querySelectorAll; wählt alle Input Elemente aus mit input Farbe, 
+      console.log(farben); 
 
       /*alle Einzelelemente von farben ansprechen und ausgeben - wie kommt man jetzt an den ausgewählten bzw. die jeweilige Farbe? */
       farben.forEach((element) => {
@@ -108,7 +122,15 @@
           console.log(element.value);
 
           // Text element holen und Text umfärben mit switch und cas arbeiten https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
-          
+          objDiv.style.color = element.value;
+          switch(element.value){
+            case "schwarz":
+              objDiv.style.color = '#000';
+              break;
+            case "rot":
+              objDiv.style.color = '#f00';
+              break; 
+          }
         });
       });
 
