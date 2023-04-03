@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <title>Schriftgröße</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 24px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+      }
+      input {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+          font-size: 1.5rem;
+      }
+      #text {
+        font-family: Arial;
+        font-size: 16px;
+        margin-top: 24px;
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+      .farbe {
+            color:white;
+            padding: 10px;
+        
+        }
+        .schwarz { background-color: #000;}
+        .rot { background-color: #f00;}
+        .blau { background-color: #00f;}
+        .gruen { background-color: #0f0;}
+
+        .farbe:last-child, input#size { margin-right: 2em;}
+        
+    </style>
+</head>
+
+<body>
+    <!-- +++++++++++++++++++ -->
+    <!-- +    HTML-TEIL    + -->
+    <!-- +++++++++++++++++++ -->
+
+    <h1>Variable Schrift</h1>
+
+    <select size="1" id="schriftart" style="margin-right: 24px">
+      
+      <option value="Arial">Arial</option>
+     <!-- Mehr Optionen einfügen-->  
+        
+    </select>
+
+    <input class="farbe schwarz" type="button" value="schwarz"  />
+    <input class="farbe rot" type="button" value="rot"  />
+    <input class="farbe blau" type="button" value="blau"  />
+    <input class="farbe gruen" type="button" value="gruen"  />
+
+    <input id="size" type="range" min="8" max="32" step="1" value="16" />
+    (Schriftgröße: <span id="out">16</span> Pixel)
+   
+
+    <div id="text">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+      sit amet.
+    </div>
+
+    <!-- +++++++++++++++++++ -->
+    <!-- + JAVASCRIPT-TEIL + -->
+    <!-- +++++++++++++++++++ -->
+
+    <script>
+      // 1. Schriftart ändern: holen auf change mit .style.fontFamily = ... .value 
+
+      let objSelect = document.getElementById('schriftart');
+      objSelect.addEventListener('change', () => {
+        
+      });
+
+      //2. Schriftgröße ändern auf change mit style.fontSize = ... .value
+      
+      function(groesse){
+        
+      }
+
+
+      // 3. Farben holen und ändern - diese Lösung verwendet querySelectorAll und switch und case
+
+      /*Alle Buttons mit querySelectorAll auswählen und mit console.log ausgeben lassen */
+      let farben = document.querySelectorAll('input.farbe');
+      console.log(farben);
+
+      /*alle Einzelelemente von farben ansprechen und ausgeben - wie kommt man jetzt an den ausgewählten bzw. die jeweilige Farbe? */
+      farben.forEach((element) => {
+        console.log(element);
+        // auf value zugreifen
+        console.log(element.value);
+
+        // Allen Elementen einen EventListener click hinzufügen 
+        element.addEventListener('click', () => {
+          console.log(element.value);
+
+          // Text element holen und Text umfärben mit switch und cas arbeiten https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+          
+        });
+      });
+
+     
+
+      
+      
+    </script>
+  </body>
+</html>
