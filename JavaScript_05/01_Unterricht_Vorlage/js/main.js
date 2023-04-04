@@ -29,11 +29,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (const Heading of Headings){
         // console.log(Heading)
+        Heading.getElementsByClassName.backgroundColor = "transparent"
+
+        // Dern neuen Variable inhaltParagraph wird das nachfolgende Element zugewiesen 
         let inhaltParagraph = Heading.nextElementSibling; // wir nehmen alle, greifen auf das nachvollgende Kind zu und geben dem eine Variable zugegeben 
         inhaltParagraph.classList.add("invisible"); // es wird hier die Klasse invisible zu einer Klasse hinzugefügen
 
         Heading.addEventListener("click", ()=> {
+
+            // Jetzt soll 
+
             inhaltParagraph.classList.toggle("invisible");
+            // allert 
+            if(Heading.style.backgroundColor === "transparent"){
+                Heading.style.backgroundColor = "#610909";
+                Heading.style.color = "white";
+            }else{
+                Heading.style.backgroundColor = "transparent"
+            }
         })   
     }
 
