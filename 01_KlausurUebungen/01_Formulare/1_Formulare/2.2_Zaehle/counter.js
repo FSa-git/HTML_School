@@ -11,7 +11,7 @@ hoch.addEventListener("click", ()=> {
 
 runter.addEventListener("click", ()=> {
 
-counterOutPut = document.getElementById("zaehler");
+counterOutPut = document.getElementById("counter");
 
 let numbr = parseInt(counterOutPut.innerText);
 
