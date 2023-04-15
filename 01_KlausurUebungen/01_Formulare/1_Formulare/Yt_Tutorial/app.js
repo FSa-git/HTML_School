@@ -17,7 +17,10 @@ console.log(playerName);
 // Funktionen 
 
 function calculate(number1, number2){
-    console.log(number1 + number2);
+    let summe = number1 + number2;
+    return summe;
 }
 
-calculate(); // Jetzt wird es ausgegeben
+console.log(calculate(5, 3));
+
+calculate(5, 3); // Jetzt wird es ausgegeben
