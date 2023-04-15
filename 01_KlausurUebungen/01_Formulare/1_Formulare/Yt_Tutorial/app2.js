@@ -10,3 +10,6 @@ if(highscore > 90) {
 if(highscore == 100){
     console.log('Du bist 100')
 }
+else{
+    console.log('das geht doch besser')
+}
