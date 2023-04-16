@@ -32,3 +32,15 @@ minusOne.addEventListener('click', ()=>{
     chifreOutput.innerText = zahl - 1; 
 
 });
+
+// New try for adding text to a label 
+let myName = document.getElementById('last_name_label');
+myName.innerText = 'Der neue Name';
+
+// New try for changing text inside
+let myChange = document.getElementById('first_name_label');
+myChange.innerText = 'Der sehr neue Vorname';
+
+// New try for changing HTML Elements
+let myNewChange = document.getElementById('first_name_label');
+myNewChange.innerHTML = 'Der <h3> GANZ </h3> neue Text';
