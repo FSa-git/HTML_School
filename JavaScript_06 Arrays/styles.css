@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+    font-size: 1rem;
+  }
+  
+  body {
+    font-size: 1rem;
+    font-family: Calibri, Arial, sans-serif;
+  }
+  @media (min-width: 900px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4em;
+    
+  }
+  
+  }
+  
+  
+  ol li {
+   
+    border-bottom: 0.5px solid grey;
+    padding: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  label, input, button {
+    font-size: 1rem;
+    font-family: Calibri, Arial, sans-serif;
+    padding: 1em;
+    display: block;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+  }
+  
+  input[type="checkbox"] {
+    display: inline;
+  }
+  input[type="checkbox"] ~ label {
+    display: inline;
+  }
