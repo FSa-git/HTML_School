@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="x-ua-compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Teilnehmerliste mit Arrays</title>
+
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <h2>Teilnehmerliste</h2>
+
+    <div class="row">
+        <div class="col">
+            <ol class="list-group" id="students-list">
+
+            </ol>
+        </div>
+        <div class="col">
+            <form>
+                <div class="form-group">
+                    <label for="nameInput">Teilnehmer hinzufügen:</label> <input class="form-control" id="nameInput"
+                                                                                 placeholder="Nachname, Vorname"
+                                                                                 type="text">
+                </div>
+                <div>
+                    <input class="form-check-input" id="agbInput" type="checkbox" value=""> <label
+                        class="form-check-label" for="agbInput">AGB gelesen und akzeptiert?</label>
+                </div>
+            </form>
+            <button id="add-student">Teilnehmer hinzufügen!</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/main_start.js" type="text/javascript"></script>
+</body>
+</html>
