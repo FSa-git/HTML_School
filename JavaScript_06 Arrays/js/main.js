@@ -30,18 +30,49 @@ document.addEventListener("DOMContentLoaded", ()=>{
     // Funktion, um die ganze Liste zu erstellen 
     function createList(){
      
-        STUDENTLIST.innerText = null
+        // STUDENTLIST.innerText = null
+
+        // 
+        while(STUDENTLIST.lastElementChild){
+            STUDENTLIST.removeChild(STUDENTLIST.lastElementChild)
+        }
+        //
+
+        // Nur mit diesem Teil alleine würde die Ganze ArrayListe wieder gezeigt 
+        // Array sortieren und für jeden Eintrag einen Listeneintrag erstellen
         students.sort();
         for (let i = 0; i < students.length; i++){
             let studentEintrag = students[i]
             createListItem(studentEintrag)
         }
     }
+    // Initiale Liste erstellen 
     createList()
 
+    // Neuer Eintrag hinzufügen - erst ins Array, dann am Bildschirm
     ADDSTUDENTBTN.addEventListener('click', ()=>{
+
+        // Für die AGB
+        if(AGBINPUT.checked === false){
+            alert('Bitte AGB lesen und akzeptieren!')
+            return
+        }
+
         let text = NAMEINPUT.value;
+
+        // Wenn man seinen Namen vergisst
+        if(text.trim() == ""){
+            alert('Sie haben einen Namen vergessen')
+            AGBINPUT.checked = false
+            return
+        }
+
         students.push(text);
+
+        // Dass der Input danach geleert wird
+        NAMEINPUT.value = ""
+        AGBINPUT.checked = false;
+
         createList();
     })
 
