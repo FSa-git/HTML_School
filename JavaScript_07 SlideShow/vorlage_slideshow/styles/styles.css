@@ -20,6 +20,7 @@ body {
 
 /* Fade in animation */
 @keyframes fadeIn {
+    /* Beim letzten Zustand, opacity 1*/
 to {
     opacity: 1;
 }
