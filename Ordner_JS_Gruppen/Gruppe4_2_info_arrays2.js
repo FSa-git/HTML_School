@@ -26,7 +26,7 @@ students.reverse()
 console.log(students)
 
 // Wichtig: Sparse Arrays!
-// students[30] = "Joker"
+students[30] = "Joker"
 console.log(students)
 
 // Die .splice()-Funktion zum Entfernen von Elementen
@@ -37,3 +37,9 @@ console.log(students)
 students.splice(1, 0, "Joker")
 console.log(students)
 
+// Ich versuche auf pos. 30 was zu entfernen
+students.splice(29,1);
+console.log(students);
+
+students.splice(3,26);
+console.log(students);
