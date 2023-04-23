@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Version 1
     welcomeHere.addEventListener("click", welcome)
     function welcome() {
-        welcomeHere.innerHTML = "Willkommen <strong>Klasse I13</strong>";
+        welcomeHere.innerHTML = "Willkommen <strong>(Klasse I13)</strong> Leute";
     }
 
     // Zum Vergleich:
