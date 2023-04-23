@@ -21,12 +21,15 @@ let english1 = [
   "\x47\xFC\x6E\x74\x68\x65\x72"
 ];
 
+console.log("Anzahl der Teilnehmer in English 1: " + english1.length);
+
 let english2 = [
   "\x57\x69\x62\x6B\x65",
   "\x4A\x65\x61\x6E\x6E\x65\x74\x74\x65",
   "\x50\x61\x75\x6C"
 ]
 
+console.log("Anzahl der Teilnehmer in English 2: " + english2.length);
 
 
 // Aufgabe!
@@ -37,7 +40,23 @@ let english2 = [
 //    Sprachkurs belegen. Finde dazu heraus, in welchen Sprachkurs
 //    "Paul" belegt hat (über die Console), und füge sie ans Ende der Teilnehmerliste
 //    zu diesem Kurs hinzu! Verwende dazu nicht die .splice()-Funktion!
-//
+
+// English 1 durchsuchen
+// GPT: 
+// let kurs = 1;
+// for (let i = 0; i < english1.length; i++) {
+// if (english1[i] === "\x50\x61\x75\x6C") {
+// console.log("Paul ist im Englisch-Kurs " + kurs);
+// // Paul ans Ende von English 1 hinzufügen
+// english1.push("\x50\x61\x75\x6C");
+// break;
+// }
+
+
+// Ich:
+console.log(english1.indexOf('\x50\x61\x75\x6C'));
+console.log(english2.indexOf('\x50\x61\x75\x6C'));
+
 //
 // b) "Günther" hat eben angerufen, und muss seinen Sprachkurs 
 //    absagen. Finde heraus, in welchem Kurs er eingeschrieben war,
