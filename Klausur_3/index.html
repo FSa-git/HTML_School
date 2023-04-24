@@ -7,6 +7,45 @@
     <title>Reiseziele</title>
 </head>
 <body>
-    
+    <h2>Reisen und Infos</h2>
+    <form action="">
+        <fieldset>
+            <legend>Ihre Daten</legend>
+            <p>
+                <input type="text" placeholder="'Vornamen'" id="first_name">
+                <label for="first_name">Vornamen</label>
+            </p>
+            <p>
+                <input type="text" placeholder="'Nachnamen'" id="second_name">
+                <label for="second_name">Nachnamen</label>
+            </p>
+            <p>
+                <input type="text" placeholder="'Telefonnummer'" id="userNr">
+                <label for="userNr">Telefonnummer</label>
+            </p>
+            <p>
+                <input type="email" placeholder="'E-Mail Adresse'" id="userAddress">
+                <label for="userAddress">E-Mail Adresse</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Ihr Reiseziele</legend>
+            <p>
+                <input type="checkbox" class="loc" name="france">
+                    <label for="france">Frankreich</label>
+                <input type="checkbox" class="loc" name="ita">
+                    <label for="ita">Italien</label>
+                <input type="checkbox" id="oesi">
+                    <label for="oesi">Österreich</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Anfrage senden</legend>
+            <p>
+                <button type="reset">Löschen</button>
+                <button type="submit" id="sent_msg">Senden</button>
+            </p>
+        </fieldset>
+    </form>
 </body>
 </html>
