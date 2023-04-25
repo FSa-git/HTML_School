@@ -29,3 +29,22 @@ to {
     opacity: 0;
     animation: fadeIn 0.5s ease-in 1 forwards;
 }
+
+/* Vor- und Zurück "Buttons" */
+#forward, #back {
+    cursor: pointer;
+    position: absolute; /* Über was anderes liegen */
+    bottom: 20px;
+    width: 0;
+    height: 0;
+    border: 20px solid rgba(255, 255, 255, 0.74);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+} 
+#back {
+border-left-color: transparent; left: 10px;
+} 
+#forward {
+    border-right-color: transparent;
+    right: 10px;
+}
