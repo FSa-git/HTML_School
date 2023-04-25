@@ -37,10 +37,13 @@ to {
 
 #forward, #back {
     cursor: pointer;
-    position: absolute; /* Über was anderes liegen, richtet sich nach dem nächst höchsten Element, dass nicht die Position static hat.  */
+    position: absolute; /* Über was anderes liegen, richtet sich nach dem nächst höchsten Element, dass nicht die Position static hat.  (Der Rand ist FEST)*/
     bottom: 20px;
+
+    /* Größe des Elementes/Pixel/Quadrat */
     width: 0;
     height: 0;
+    
     border: 20px solid rgba(255, 255, 255, 0.74); /* 20 Pixel Breiten Border */
     border-top-color: transparent;
     border-bottom-color: transparent;
@@ -49,6 +52,6 @@ to {
 border-left-color: transparent; left: 10px;
 } 
 #forward {
-    border-right-color: transparent;
+    border-right-color: transparent; /* Hier sagt man welche Richtung es verschwinden soll */
     right: 10px;
 }
