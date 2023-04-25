@@ -31,13 +31,17 @@ to {
 }
 
 /* Vor- und Zurück "Buttons" */
+.main-img{
+    position: relative;
+}
+
 #forward, #back {
     cursor: pointer;
-    position: absolute; /* Über was anderes liegen */
+    position: absolute; /* Über was anderes liegen, richtet sich nach dem nächst höchsten Element, dass nicht die Position static hat.  */
     bottom: 20px;
     width: 0;
     height: 0;
-    border: 20px solid rgba(255, 255, 255, 0.74);
+    border: 20px solid rgba(255, 255, 255, 0.74); /* 20 Pixel Breiten Border */
     border-top-color: transparent;
     border-bottom-color: transparent;
 } 
