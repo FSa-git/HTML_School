@@ -1,5 +1,4 @@
 // 1. Beispiel
-
 function summeAlle(){
     let summe = 0;
     if (arguments.length === 0) { // Wurden keine Argumente übergeben? 
@@ -10,16 +9,21 @@ for(let i = 0; i < arguments.length; i++){
 }
 return summe;
 }
+
 let sum = summeAlle(100, 200, 123, 300, 55);
 console.log("Ergebnis = " + sum); // Ausgabe: Ergebnis=778 
 
-// 2. Beispiel
+// ----------------------------------------------------------------------
 
+// 2. Beispiel
 function summeAlle2(iVal, ...myargs){
-let summe2 = iVal;
-myargs.forEach(function(val){
-summe2 += val;
+    let summe2 = iVal;
+    myargs.forEach(function(val){
+    summe2 += val;
 });
 return summe2;
 }
-console.log("Ausgabe: " + summeAlle(100,200,300,400)); // Ausgabe: 100
+
+console.log("Ausgabe: " + summeAlle2(100,200,300,400)); // Ausgabe: 100
+
+// -----------------------------------------------------------------------
