@@ -10,7 +10,7 @@ function init() {
   });
   register.addEventListener('click', (e) => {
     e.preventDefault();
-    loadContent('registerin');
+    loadContent('register');
   });
 }
 
@@ -27,7 +27,7 @@ function loadContent(name) {
 
     } else {
       /* Füge eine Warnmeldung hinzu */
-      
+      alert("Resource konnte nicht geladen werden");
     }
   }
   fetchContent();
