@@ -1,0 +1,38 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  border-bottom: 2px solid #2196da;
+  color: #2196da;
+ }
+.question {
+    display: block;
+    font-size: 1.5em;
+    color: #044062;
+    animation: einblenden 1s;
+}
+@keyframes einblenden {
+    0%   { color: #bde2f8; }
+    95% { color: #2196da; }
+    100% { color: #044062; }
+  }
+.btn {
+    background-color: #3d9dd4;
+    border: none;
+    padding: 10px;
+  }
+.btn:active, .btn:hover, .btn:focus, input[type="button"] {
+     border: none;
+     outline: none;
+  }
+.gruen {
+    background-color: green;
+}
+.rot {
+    background-color: red;
+}
+#container {
+  height: 150px;
+  overflow: hidden;
+ 
+}

@@ -1,0 +1,52 @@
+{
+    "fragen": [
+        {
+            "aussage": "RGB ist ein additives Farbsystem",
+            "correct": true
+        },
+        {
+            "aussage": "CMYK ist ein additives Farbsystem",
+            "correct": false
+        },
+        {
+            "aussage": "Lab ist wahrnehmungsorientiert",
+            "correct": true
+        },
+        {
+            "aussage": "Pantone sind Bildschirmfarben",
+            "correct": false
+        },
+        {
+            "aussage": "Das HSB Modell kann als Doppelkegel oder Kegel dargestellt werden",
+            "correct": true
+        },
+        {
+            "aussage": "Hue steht für Farbton",
+            "correct": true
+        },
+        {
+            "aussage": "C in CMYK steht für gelb",
+            "correct": false
+        }
+
+    ],
+
+    "rueckmeldungen": [
+        {
+            "ergebnis": "sehrgut",
+            "anzeige" : "– Das hast du super gemacht!"
+        },
+        {
+            "ergebnis": "gut",
+            "anzeige" : "– Viel Gutes dabei!"
+        },
+        {
+            "ergebnis": "mittel",
+            "anzeige" : "– Tja, etwas üben musst du noch!"
+        },
+        {
+            "ergebnis": "schlecht",
+            "anzeige" : "– Da gibt es nur eins: lernen, lernen, lernen"
+        }
+    ]
+}
