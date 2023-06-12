@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufloesung berechnen</title>
+</head>
+<body>
+    <form action="berechnen.php" method="get">
+        <fieldset>
+            <legend>Aufloesung berechnen</legend>
+            <label for="breite">Breite des Bildes in Pixel</label><br>
+            <input type="number" name="width" id="breite"><br>
+            <label for="aufloesung">gewuenschte Aufloesung in dpi</label><br>
+            <input type="number" name="dpi" id="aufloesung"><br>
+            <input type="reset" value="Zuruecksetzen">
+            <input type="submit" value="Berechnen">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Eingabeformular</title>
+</head>
+<body>
+    <p>Bitte tragen Sie Ihren Vornamen
+und Nachnamen ein.<br>Senden Sie
+anschließend das Formular ab.</p>
+    <form action="ausgabe.php" method="post"> <!--method="get"-->
+        <p><input name="vor">Vorname</p><label for="vor">Vorname</label>
+        <p><input name="nach">Nachname</p><label for="nach">Nachname</label>
+        <p><input type="submit"></p> 
+        <p><input type="reset"></p>
+    </form>
+</body>
+</html>
