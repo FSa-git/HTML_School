@@ -1,0 +1,29 @@
+h1 {
+  color: #ffdd33;
+}
+
+/* Nesting */
+ul {
+  margin: 10px;
+}
+ul li {
+  padding: 20px;
+}
+ul li a:hover {
+  color: red;
+}
+
+.klasse, .success, .error {
+  background-color: #ffdd33;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 2em;
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}/*# sourceMappingURL=styles.css.map */

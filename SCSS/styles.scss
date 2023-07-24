@@ -1,0 +1,33 @@
+$myColor: #ffdd33;
+
+h1 {
+    color: $myColor;
+}
+
+/* Nesting */
+ul{
+    margin: 10px;
+
+    li {
+        padding: 20px;
+        a {
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+.klasse{
+    background-color: $myColor;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2em;
+    text-decoration: underline;
+}
+.error{
+    @extend .klasse;
+    color: red;
+}
+.success {
+    @extend .klasse;
+    color: green;
+}
